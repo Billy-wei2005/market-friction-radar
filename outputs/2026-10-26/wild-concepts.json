@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "concept_id": "W-20261026-0001",
+    "cluster_id": "C-20261026-0001",
+    "concept_title": "把报销界面改成可审计事件流",
+    "transformation_operator": "反向",
+    "concept_hypothesis": "[创意假设] 不再让用户维护一张会产生隐性状态的费用表，而是把扫描、修改、审批、支付和导出表示为不可覆盖的事件流，并从事件即时生成当前视图。",
+    "default_assumption_broken": "费用系统必须以可编辑记录作为核心对象。",
+    "why_it_might_work": "多个线索涉及筛选残留、审批人变化、支付权限和导出状态不同步，可能共享状态传播不透明这一结构。",
+    "disproof_condition": "若独立调查显示这些问题主要来自互不相关的局部界面缺陷，而非状态同步和审计链断裂，则该假设不成立。",
+    "evidence_boundary": "[创意假设] 未验证；来源仅为单一开源项目中的 Issue 集合。"
+  },
+  {
+    "concept_id": "W-20261026-0002",
+    "cluster_id": "C-20261026-0001",
+    "concept_title": "由风险承担者购买的费用状态观察器",
+    "transformation_operator": "换付费者",
+    "concept_hypothesis": "[创意假设] 将费用流程异常检测从普通员工工具改为财务控制人与审计方购买的独立观察层，只监测权限、状态和导出结果之间的不一致。",
+    "default_assumption_broken": "费用产品的购买者必须是提交报销的一线用户。",
+    "why_it_might_work": "错误造成的审计、付款和合规成本通常由财务控制方承担，而不是由触发界面问题的人承担。",
+    "disproof_condition": "若财务团队无法获得必要事件数据，或异常损失低于部署和维护观察层的成本，则该概念缺乏成立条件。",
+    "evidence_boundary": "[创意假设] 未验证；尚无支付意愿证据。"
+  },
+  {
+    "concept_id": "W-20261026-0003",
+    "cluster_id": "C-20261026-0002",
+    "concept_title": "故意变慢的高风险交互模式",
+    "transformation_operator": "换时间",
+    "concept_hypothesis": "[创意假设] 普通操作保持即时响应，但涉及批量选择、权限变更和付款的操作强制进入短暂可撤销窗口，以换取状态稳定和明确反馈。",
+    "default_assumption_broken": "所有企业软件交互都应该追求零延迟即时完成。",
+    "why_it_might_work": "跳动、焦点丢失和错误状态可能使即时反馈产生虚假确定性；短暂缓冲可能降低误操作成本。",
+    "disproof_condition": "若延迟显著降低任务完成率，而错误主要由布局实现而非并发状态变化导致，则该概念不成立。",
+    "evidence_boundary": "[创意假设] 未验证；当前线索不能证明延迟能改善结果。"
+  },
+  {
+    "concept_id": "W-20261026-0004",
+    "cluster_id": "C-20261026-0002",
+    "concept_title": "无界面的工作流一致性测试市场",
+    "transformation_operator": "去除",
+    "concept_hypothesis": "[创意假设] 去除传统测试录制界面，只接受业务不变量，例如‘导出中不能再次导出’或‘删除审批人后不能静默改派’，自动在多端持续寻找反例。",
+    "default_assumption_broken": "界面测试必须围绕点击路径和截图编写。",
+    "why_it_might_work": "同一业务规则可能跨移动端、网页端和多个页面重复失效，业务不变量比具体点击路径更稳定。",
+    "disproof_condition": "若团队无法用清晰、可执行的方式表达业务不变量，或现有端到端测试已能低成本捕获同类问题，则价值有限。",
+    "evidence_boundary": "[创意假设] 未验证；尚未证明这些 Issue 在多个系统重复出现。"
+  },
+  {
+    "concept_id": "W-20261026-0005",
+    "cluster_id": "C-20261026-0003",
+    "concept_title": "隐私代理而不是全局网络代理",
+    "transformation_operator": "极端约束",
+    "concept_hypothesis": "[创意假设] 将网络可见性工具限制为只观察用户明确选择的单个任务、域名或短时间窗口，默认无法读取其他流量。",
+    "default_assumption_broken": "为了提供自动化帮助，工具必须获得设备级或浏览器级持续网络可见性。",
+    "why_it_might_work": "取消订阅线索显示，潜在价值可能被不透明的网络权限和信任成本抵消。",
+    "disproof_condition": "若目标功能在技术上必须持续观察跨域流量，或用户在充分理解权限后仍普遍接受全局代理，则该概念的差异化不足。",
+    "evidence_boundary": "[创意假设] 未验证；仅有单一用户自述，且原始技术判断仍待核实。"
+  },
+  {
+    "concept_id": "W-20261026-0006",
+    "cluster_id": "C-20261026-0003",
+    "concept_title": "由保险方支付的权限可见性标签",
+    "transformation_operator": "责任倒置",
+    "concept_hypothesis": "[创意假设] 由承担数据泄露或合规损失的保险方推动统一权限标签，要求工具在安装前用可比较格式披露实际网络和证书权限。",
+    "default_assumption_broken": "权限披露只发生在用户与软件供应商之间。",
+    "why_it_might_work": "风险承担者可能比单个用户更有动力要求标准化、可审计的权限透明度。",
+    "disproof_condition": "若保险方无法把权限标签与损失概率建立统计关联，或平台权限模型已足够透明，则该机制缺少推动力。",
+    "evidence_boundary": "[创意假设] 未验证；没有保险定价或事故数据支持。"
+  }
+]

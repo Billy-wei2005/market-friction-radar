@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "radar": "node scripts/run-radar.mjs",
+    "apply-concepts": "node scripts/apply-concepts.mjs",
     "test": "node --check scripts/run-radar.mjs"
   },
   "dependencies": {
