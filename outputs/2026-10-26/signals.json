@@ -1,0 +1,123 @@
+[
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/93854",
+    "title": "[CFI] Show Merchant, Date, Amount Fields in the Scan flow",
+    "excerpt": "Action item from [here](https://github.com/Expensify/Expensify/issues/649560). ___ **Issue reported by:** @trjExpensify **Slack conversation** (hyperlinked to channel name): #migrate ## Action Performed: _This is a new feature._ 1. Get on the `newManualExpenseFlow` beta. 2. Go to Create expense 3. Click the Scan tab 4. Take a picture of a receipt 5. Click \"Show more\" 6. Verify Merchant, Date, Amount fields are present 7. Enter a merchant name 8. Click \"Create expense\" 9. Verify the in-line errors for required date and amount appear 10. Fill out those fields 11. Click \"Create expense\" 12. Verify the the expense is created 13. Verify the receipt doesn't show \"Scanning...\" fields or any of the user entered merchant, date, amount fields update. Repeat the steps above in the different scan flows: - Drag and drop (desktop) - Green scan fab - Quick Action Button - Long press on the app icon > \"Scan receipt\" ## Expected Result: - Add the `Merchant`, `Amount`, and `Date` fields to the Scan tab confirmation screen - Revealed after clicking \"Show more\" - If any of the merchant, date, amount fields are entered manually, all become required to create the expense. - Choosing to enter the merchan",
+    "engagement": 197,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0001",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/61414",
+    "title": "[$250] Stop scrolling and jumping when selecting items in multi-select view",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** 9.1.39-6 **Reproducible in staging?:** Y **Reproducible in production?:** Y **If this was caught during regression testing, add the test name, ID and link from TestRail:** **Email or phone of affected tester (no customers):** **Logs:** https://stackoverflow.com/c/expensify/questions/4856 **Expensify/Expensify Issue URL:** **Issue reported by:** @shawnborton **Slack conversation** (hyperlinked to channel name): [#Expensify Bugs](https://expensify.slack.com/archives/C049HHMV9SM/p1746476858200089) ## Action Performed: 1. Navigate to Reports 2. Click Advanced filters > Categories 3. Scroll the page and select any category 4. Observe ## Expected Result: Selecting an item should not trigger any automatic scrolling or reordering. The user’s scroll position should remain unchanged. Items should stay in place visually to allow smooth, uninterrupted multi-selection. ## Actual Result: The selected item moves to the top of the li",
+    "engagement": 175,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0002",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/68765",
+    "title": "[Tracking] Use React Compiler to enforce the Rules of React",
+    "excerpt": "Coming from https://expensify.slack.com/archives/C08CZDJFJ77/p1754356010769039 **Background:** The React Compiler is meant to automatically optimize React code with invisible `React.memo`, `useMemo`, and `useCallback` calls. This in theory eliminates the need to use these React constructs in the codebase. However, we see many examples where performance can be improved with `useMemo`. It's unclear when React Compiler will \"do it's thing\" and when it won't. Furthermore, we have many many components and hooks throughout the codebase the violate the Rules of React. The React Compiler has come a long way since this issue was first created, and it's now much more tightly integrated with lint rules in eslint-plugin-react-hooks which are designed precisely to help enforce the Rules of React and to teach developers how to write better React Code in the process. **Problem:** 1. **(done)** Update eslint-plugin-react-hooks and enable all rules globally. See what errors crop up. There were 559. 2. **(done)** Make them all warnings in the global ESLint config, and set `--max-warnings` accordingly so that `npm run lint` passes on main. 3. Create issues to fix all the react-hooks lint rules, work ",
+    "engagement": 132,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0003",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/78089",
+    "title": "[$250] Android - Split - Percentage input has to be focused twice to be able to edit it.",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** 9.2.82-0 **Reproducible in staging?:** Yes **Reproducible in production?:** N/A - new feature, doesn't exist in prod **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** https://github.com/Expensify/App/pull/74652 **Email or phone of affected tester (no customers):** ibellicotest+2230@gmail.com **Issue reported by:** Applause Internal Team **Bug source:** Exploratory - Significant User Experience Deterioration **Device used:** Motorola MotoG60 / Android 12 (Hybrid app) **App Component:** Money Requests ## Action Performed: Prerequisite: Account has at least one workspace. 1. Open the Expensify app. 2. Open any workspace chat. 3. Create a manual expense. 4. Open the just created expense. 5. Tap on \"More\" > \"Split\" 6. Switch to \"Percentage\" tab. 7. Tap on the percentage input of any split to edit it. 8. Note that keyboard opens but input is automatically unfocused. 9. Tap o",
+    "engagement": 119,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0004",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/75020",
+    "title": "[$250] Workspace - Admin becomes approver when dismiss error message for deleting approver",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** v9.2.57-0 **Reproducible in staging?:** Yes **Reproducible in production?:** Unable to check in Prod becourse of [KI ](https://github.com/Expensify/Expensify/issues/564707) **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** https://github.com/Expensify/App/pull/74710 **Email or phone of affected tester (no customers):** gocemate+b2155186@gmail.com **Issue reported by:** Applause Internal Team **Device used:** Lenovo 80ES / Windows 10 Pro **App Component:** Workspace Settings ## Action Performed: 1. Go to staging.new.expensify.com 1. As an admin, create a workspace and invite user A 3. Enable approval and change approver to user A 4. Create and submit a manual expense as an admin in workspace chat 5. Remove user A 6. Dismiss the error message 7. Go to Workflow> Add approvals ## Expected Result: After dismissing the error message Approver A should still be approver ## Act",
+    "engagement": 114,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0005",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/96982",
+    "title": "[$250] Spend-Expense remains in description filter results after its description is changed",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** V9.4.44 **Reproducible in staging?:** Yes **Reproducible in production?:** Yes **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** https://test-management.browserstack.com/projects/2219752/test-runs/65568275/folder/13176922/41237504/1585993918 **Email or phone of affected tester (no customers):** dreamnitethedragon+vegst@gmail.com **Issue reported by:** Applause Internal Team **Bug source:** Exploratory - Significant User Experience Deterioration **Device used:** Redmi note 10s android 13 **App Component:** User Settings ## Action Performed: 1. Launch app 2. Create 2 distance manual expense - one expense with description from Spend page 3. Tap filter - description - enter the description (step2) - apply filter 4. Note expense with description is correctly shown with user name on top 5. Tap bookmark and save the search results 6. Open the expense from saved search results",
+    "engagement": 113,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0006",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/86919",
+    "title": "[$250] Message in IOU is not scrolled to when navigating via link, \"submitted\" not shown",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** 9.3.51-5 **Reproducible in staging?:** Yes **Reproducible in production?:** Yes **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** https://github.com/Expensify/App/pull/86719 step 2 in Re-fetch triggers **Email or phone of affected tester (no customers):** N/A **Issue reported by:** Applause Internal Team **Bug source:** Pull Request QA execution **Device used:** iPhone 15 iOS 26.3.1 **App Component:** Other ## Action Performed: 1. Sign in to ND as User A on the main testing device, and User B on secondary device 2. As User A, create a workspace, add User B as a member 3. As User B, navigate to the workspace chat 4. Create a manual expense, open expense details, click Submit button 5. Send three messages in the expense details 6. Right click on the 3rd message - Copy link - send the link in 1:1 chat with User A 7. As User A, open 1:1 chat with User B, tap the link from ",
+    "engagement": 99,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0007",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/95750",
+    "title": "[Due for payment 2026-10-30] [CFI] [$500] Allow any workspace admin to pay reports",
+    "excerpt": "Coming from [this Slack thread](https://expensify.slack.com/archives/C07NMDKEFMH/p1783471123993169), @sakluger flagged a classic/NewDot parity gap regarding payments. ### Details - When no bank account is connected to a workspace, any workspace already sees the option to pay/mark as paid in NewDot. This part works correctly today and needs no changes. - The gap: when a bank account **is** connected to a workspace, NewDot only shows the pay button to the admin set as the workspace payer. Classic shows it to any workspace admin. - Proposal: any workspace admin should see the option to pay (via any VBA they have access to) or manually mark as paid, regardless of whether a bank account is connected to the workspace. - In the event the workspace doesn't have a VBA, they should be prompted to add one in situ when they try to pay via business account (the existing payment button logic). - An admin adding/paying with a bank account that's not the current workspace bank account shouldn't change the workspace bank account, same as now. - We should **not** actively prompt admins that aren't the workspace payer to pay via badges/GBRs. That stays as-is (per https://github.com/Expensify/Expensif",
+    "engagement": 99,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0008",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/98025",
+    "title": "[$250] Workspace chat - Export to NetSuite button still shows while an export is in progress",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding. To join our Slack channel, fill out [this form](https://forms.gle/Q7hnhUJPnQCK7Fe56). ___ **Version Number:** 9.4.50-3 **Reproducible in staging?:** Yes **Reproducible in production?:** Yes **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** **Email or phone of affected tester (no customers):** **Logs:** https://stackoverflow.com/c/expensify/questions/4856 **Expensify/Expensify Issue URL:** **Issue reported by:** @roryabraham **Slack conversation** (hyperlinked to channel name): [expensify_bugs](https://expensify.slack.com/archives/C049HHMV9SM/p1786083538409369) ## Action Performed: 1. Create an account 2. Create a workspace 3. Set up a NetSuite connection 4. After initial sync, go to Workspace -> Connections -> NetSuite -> Export -> `Export out-of-pocket expenses as...` and set: - Export as... to Journal entries - Reimbursable journal posting account to 2000 Accounts Payable (or whatever account you want I guess) 5. Manually create an expense report. Do everything n",
+    "engagement": 88,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0009",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/Expensify/App/issues/80823",
+    "title": "[Due for payment 2026-10-23] [$250] Reports - Expenses from different merchant grouped with same merchant on \"Top Merchants\"",
+    "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** 9.3.11.0 **Reproducible in staging?:** Yes **Reproducible in production?:** N/A - new feature, doesn't exist in prod **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** https://github.com/Expensify/App/pull/80672 **Email or phone of affected tester (no customers):** ibellicotest+2250@gmail.com **Issue reported by:** Applause Internal Team **Bug source:** Exploratory - Significant User Experience Deterioration **Device used:** Motorola MotoG60 / Android 12 (Hybrid app) - Windows 11 / Chrome **App Component:** Search ## Action Performed: Prerequisite: Account has at least one workspace. 1. Open the staging.new.expensify.com website. 2. Open any workspace chat. 3. Create two manual expenses on the same report with different merchants (For example: I and Ig) and date from last month. 4. Navigate to \"Reports\" > \"Top Merchants\" 5. Expand expenses from both merchants. 6. Note t",
+    "engagement": 71,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0010",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  },
+  {
+    "source_type": "community",
+    "source_name": "Hacker News Ask",
+    "source_url": "https://news.ycombinator.com/item?id=50229493",
+    "title": "Ask HN: Are people aware OpenAI Dots intercept SSL?",
+    "excerpt": "I&#x27;ve already cancelled my OpenAI subscription due to all their recent shenanigans. But before my month ends I thought I&#x27;d see what this Dot thing is all about. First thing I did was install Firefox to test out a project of mine (wouldn&#x27;t work in Chrome). It failed to connect: &gt; The cloud proxy uses an OpenAI certificate authority that the operating system already trusts, but the fresh Firefox profile doesn’t. The game’s connection verifies successfully against that existing authority. &gt; May I add that same cloud certificate authority to this isolated Firefox test profile? Certificate validation stays enabled, but Firefox would then trust certificates issued by the cloud proxy. Wait. What? No. Of course not. Aren&#x27;t Dots ostensibly designed for personal use? Accessing your email and the like. With this thing intercepting web traffic, I imagine almost everyone using these things are in violation of all sorts of policies and agreements.",
+    "engagement": 7,
+    "evidence_note": "Public discussion lead; not independently verified",
+    "signal_id": "S-20261026-0011",
+    "collected_at": "2026-10-25T16:10:41.917Z"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "timezone": "Asia/Singapore",
+  "maxSignalsPerSource": 30,
+  "keywords": [
+    "workaround", "manual", "painful", "broken", "unusable", "data loss",
+    "doesn't scale", "spreadsheet", "copy paste", "refund", "cancelled",
+    "why is it so hard", "there has to be a better way", "would pay"
+  ],
+  "githubQueries": [
+    "repo:Expensify/App is:issue is:open comments:>3 manual in:title,body",
+    "repo:home-assistant/core is:issue is:open comments:>3 workaround in:title,body",
+    "repo:microsoft/vscode is:issue is:open comments:>3 \"data loss\" in:title,body",
+    "repo:nextcloud/server is:issue is:open comments:>3 manual in:title,body",
+    "repo:rustdesk/rustdesk is:issue is:open comments:>3 workaround in:title,body",
+    "repo:blender/blender is:issue is:open comments:>3 workflow in:title,body"
+  ],
+  "subreddits": ["smallbusiness", "Entrepreneur", "sysadmin", "manufacturing", "nursing"],
+  "webWatch": [
+    {"name": "Kickstarter most backed", "url": "https://www.kickstarter.com/discover/advanced?sort=most_backed"},
+    {"name": "Indiegogo projects", "url": "https://www.indiegogo.com/en/projects/search"}
+  ]
+}

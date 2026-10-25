@@ -1,0 +1,20 @@
+{
+  "name": "market-friction-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "radar": "node scripts/run-radar.mjs",
+    "test": "node --check scripts/run-radar.mjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "nodemailer": "^10.2.1"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

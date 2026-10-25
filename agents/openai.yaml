@@ -1,0 +1,6 @@
+interface:
+  display_name: "市场摩擦雷达"
+  short_description: "扫描商业痛点信号、生成野生创意并输出可审计周报"
+  default_prompt: "使用 $market-friction-radar 扫描本周商业摩擦信号并生成 Wild Concepts 报告。"
+policy:
+  allow_implicit_invocation: true

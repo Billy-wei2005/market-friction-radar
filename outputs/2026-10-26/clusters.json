@@ -1,0 +1,46 @@
+[
+  {
+    "cluster_id": "C-20261026-0001",
+    "label": "manual",
+    "signal_ids": [
+      "S-20261026-0001",
+      "S-20261026-0004",
+      "S-20261026-0005",
+      "S-20261026-0006",
+      "S-20261026-0007",
+      "S-20261026-0008",
+      "S-20261026-0009",
+      "S-20261026-0010"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "Observed workaround language",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  },
+  {
+    "cluster_id": "C-20261026-0002",
+    "label": "uncategorized friction",
+    "signal_ids": [
+      "S-20261026-0002",
+      "S-20261026-0003"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "待核实",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  },
+  {
+    "cluster_id": "C-20261026-0003",
+    "label": "cancelled",
+    "signal_ids": [
+      "S-20261026-0011"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "待核实",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  }
+]
