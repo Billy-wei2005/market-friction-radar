@@ -8,7 +8,7 @@
     "engagement": 197,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0001",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -19,7 +19,7 @@
     "engagement": 175,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0002",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -30,7 +30,7 @@
     "engagement": 132,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0003",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -41,7 +41,7 @@
     "engagement": 119,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0004",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -52,7 +52,7 @@
     "engagement": 114,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0005",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -63,7 +63,7 @@
     "engagement": 113,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0006",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -74,7 +74,7 @@
     "engagement": 99,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0007",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -85,7 +85,29 @@
     "engagement": 99,
     "evidence_note": "Public engineering record; scope is repository-specific",
     "signal_id": "S-20261026-0008",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/24240",
+    "title": "[NC 20+] Legacy encryption - mitigation and documentation thereof",
+    "excerpt": "With Nextcloud 20, the term \"Legacy encryption\" was introduced. The documentation does say little about what legacy encryption is: https://docs.nextcloud.com/server/20/admin_manual/configuration_files/encryption_migration.html I found another document, which gives hints about what could be meant: https://eprint.iacr.org/2020/1439.pdf I run the command `occ encryption:scan:legacy-format` with output similar to this: `sudo -u www-data php /var/www/nextcloud/occ encryption:scan:legacy-format Scanning all files for legacy encryption Scanning all files for username /username/files_trashbin/files/file1.odt.d1592989576 does not have a proper header /username/files_trashbin/versions/folder1/file2.xls.v1585723230 does not have a proper header /username/files_versions/folder2/file3.xls.v1189677150 does not have a proper header` Now I got some files with inproper headers. Does my nextcloud still use legacy encryption for all files or does it use a more secure encryption? What are the differences? When running `occ encryption` I also encountered a new command: _Command \"encryption\" is not defined. Did you mean one of these? encryption:change-key-storage-root encryption:decrypt-all encryption:d",
+    "engagement": 89,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0009",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/32194",
+    "title": "[Bug]: OCP\\Files\\NotFoundException: No mount for path /files_encryption/OC_DEFAULT_MODULE/pubShare_6a00bfb3.publicKey existing mounts:",
+    "excerpt": "### ⚠️ This issue respects the following points: ⚠️ - [X] This is a **bug**, not a question or a configuration/webserver/proxy issue. - [X] This issue is **not** already reported on Github _(I've searched it)_. - [X] Nextcloud Server **is** up to date. See [Maintenance and Release Schedule](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule) for supported versions. - [X] I agree to follow Nextcloud's [Code of Conduct](https://nextcloud.com/contribute/code-of-conduct/). ### Bug description Upgraded from 23.0.4 to NC 24.0.0 RC2 ### Steps to reproduce NA ### Expected behavior NA ### Installation method Manual installation ### Operating system Debian/Ubuntu ### PHP engine version PHP 8.0 ### Web server Apache (supported) ### Database engine version MySQL ### Is this bug present after an update or on a fresh install? Updated to a major version (ex. 22.2.3 to 23.0.1) ### Are you using the Nextcloud Server Encryption module? Encryption is Enabled ### What user-backends are you using? - [X] Default user-backend _(database)_ - [ ] LDAP/ Active Directory - [ ] SSO - SAML - [ ] Other ### Configuration report ```shell { \"system\": { \"instanceid\": \"***REMOVED SENSITIVE VAL",
+    "engagement": 89,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0010",
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -95,8 +117,41 @@
     "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding. To join our Slack channel, fill out [this form](https://forms.gle/Q7hnhUJPnQCK7Fe56). ___ **Version Number:** 9.4.50-3 **Reproducible in staging?:** Yes **Reproducible in production?:** Yes **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** **Email or phone of affected tester (no customers):** **Logs:** https://stackoverflow.com/c/expensify/questions/4856 **Expensify/Expensify Issue URL:** **Issue reported by:** @roryabraham **Slack conversation** (hyperlinked to channel name): [expensify_bugs](https://expensify.slack.com/archives/C049HHMV9SM/p1786083538409369) ## Action Performed: 1. Create an account 2. Create a workspace 3. Set up a NetSuite connection 4. After initial sync, go to Workspace -> Connections -> NetSuite -> Export -> `Export out-of-pocket expenses as...` and set: - Export as... to Journal entries - Reimbursable journal posting account to 2000 Accounts Payable (or whatever account you want I guess) 5. Manually create an expense report. Do everything n",
     "engagement": 88,
     "evidence_note": "Public engineering record; scope is repository-specific",
-    "signal_id": "S-20261026-0009",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "signal_id": "S-20261026-0011",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/45087",
+    "title": "[Bug]: 'Data directory protected' check failing",
+    "excerpt": "### ⚠️ This issue respects the following points: ⚠️ - [X] This is a **bug**, not a question or a configuration/webserver/proxy issue. - [X] This issue is **not** already reported on [Github](https://github.com/nextcloud/server/issues?q=is%3Aopen+is%3Aissue+label%3Abug) OR [Nextcloud Community Forum](https://help.nextcloud.com/) _(I've searched it)_. - [X] Nextcloud Server **is** up to date. See [Maintenance and Release Schedule](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule) for supported versions. - [X] I agree to follow Nextcloud's [Code of Conduct](https://nextcloud.com/contribute/code-of-conduct/). ### Bug description The Data directory protected check [DataDirectoryProtected.php](../blob/b081d3ccccb741235858fb0515678ab45f79f623/apps/settings/lib/SetupChecks/DataDirectoryProtected.php) still appears to try and check the URL even when the data directory is not in the webroot. The error also indicated that the .htaccess file is not working however it is. The runHead function is being passed $dataUrl which when I modified the code to log $dataUrl showed as just `//var/nc_data` and the .oc_data was also not appended. ### Steps to reproduce 1. Upgraded fr",
+    "engagement": 73,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0012",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/34012",
+    "title": "[Bug]: `hash_hkdf(): Argument #2 ($key) cannot be empty` / `HMAC does not match`",
+    "excerpt": "### ⚠️ This issue respects the following points: ⚠️ - [X] This is a **bug**, not a question or a configuration/webserver/proxy issue. - [X] This issue is **not** already reported on Github _(I've searched it)_. - [X] Nextcloud Server **is** up to date. See [Maintenance and Release Schedule](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule) for supported versions. - [X] Nextcloud Server **is** running on 64bit capable CPU, PHP and OS. - [X] I agree to follow Nextcloud's [Code of Conduct](https://nextcloud.com/contribute/code-of-conduct/). ### Bug description After upgrading my server from Nextcloud v24.0.4 to v24.0.5 and also upgrading to PHP8 (I don't know if this is of importance), the Nextcloud cron job generates the following error output: ``` ValueError: hash_hkdf(): Argument #2 ($key) cannot be empty in .../lib/private/Security/Crypto.php:97 Stack trace: #0 .../nextcloud/lib/private/Security/Crypto.php(97): hash_hkdf('sha512', '') #1 .../nextcloud/lib/private/Security/IdentityProof/Manager.php(110): OC\\Security\\Crypto->encrypt('-----BEGIN PRIV...') #2 .../nextcloud/lib/private/Security/IdentityProof/Manager.php(133): OC\\Security\\IdentityProof\\Manager->",
+    "engagement": 72,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0013",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/41114",
+    "title": "[Bug]: SMB webdav Exception \"Malformed state response from server\", \"Undefined index: attributes\"",
+    "excerpt": "### ⚠️ This issue respects the following points: ⚠️ - [X] This is a **bug**, not a question or a configuration/webserver/proxy issue. - [X] This issue is **not** already reported on Github _(I've searched it)_. - [X] Nextcloud Server **is** up to date. See [Maintenance and Release Schedule](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule) for supported versions. - [X] I agree to follow Nextcloud's [Code of Conduct](https://nextcloud.com/contribute/code-of-conduct/). ### Bug description Files can not be synchronized from an Android device with \"Nextcloud Android App\" into the SMB storage location. Or alternatively files can not be moved within the SMB storage via the browser GUI. Instead the following errors are reported ``` webdav: Icewind\\SMB\\Exception\\Exception: Malformed state response from server PHP: Error: Undefined index: attributes at /var/www/nextcloud/apps/files_external/3rdparty/icewind/smb/src/Wrapped/Parser.php#155 ``` ### Steps to reproduce 1. Install nextcloud version 24.0.1 on a Debian 11 Bullseye server 2. Install the smbclient 4.13.13 to attach SMB-shares as external storage 3. Attach external storage backend by a SMB-share on same Debian",
+    "engagement": 72,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0014",
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "issue_tracker",
@@ -106,8 +161,195 @@
     "excerpt": "If you haven’t already, check out our [contributing guidelines](https://github.com/Expensify/ReactNativeChat/blob/main/contributingGuides/CONTRIBUTING.md) for onboarding and email contributors@expensify.com to request to join our Slack channel! ___ **Version Number:** 9.3.11.0 **Reproducible in staging?:** Yes **Reproducible in production?:** N/A - new feature, doesn't exist in prod **If this was caught during regression testing, add the test name, ID and link from BrowserStack:** https://github.com/Expensify/App/pull/80672 **Email or phone of affected tester (no customers):** ibellicotest+2250@gmail.com **Issue reported by:** Applause Internal Team **Bug source:** Exploratory - Significant User Experience Deterioration **Device used:** Motorola MotoG60 / Android 12 (Hybrid app) - Windows 11 / Chrome **App Component:** Search ## Action Performed: Prerequisite: Account has at least one workspace. 1. Open the staging.new.expensify.com website. 2. Open any workspace chat. 3. Create two manual expenses on the same report with different merchants (For example: I and Ig) and date from last month. 4. Navigate to \"Reports\" > \"Top Merchants\" 5. Expand expenses from both merchants. 6. Note t",
     "engagement": 71,
     "evidence_note": "Public engineering record; scope is repository-specific",
-    "signal_id": "S-20261026-0010",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "signal_id": "S-20261026-0015",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/64505",
+    "title": "Nextcloud 35.0.0 - `The database schema does not match what is expected for the installed version`",
+    "excerpt": "### ⚠️ This issue respects the following points: ⚠️ - [x] This is **not** a troubleshooting question, general support matter, or webserver/proxy problem, but likely a bug _(if unsure, ask the [Community Help Forum](https://help.nextcloud.com))_. - [x] This issue is **not** already reported on [Github](https://github.com/nextcloud/server/issues?q=is%3Aissue+label%3Abug) OR solved at the [Community Help Forum](https://help.nextcloud.com/) _(I've searched!)_. - [x] I'm using a maintained major version of Nextcloud Server **and** tested against the latest patch level. _([Supported major versions and current patch levels](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule))_. - [x] I agree to follow Nextcloud's [Code of Conduct](https://nextcloud.com/contribute/code-of-conduct/). - [x] I've tried my best to provide clear reproduction steps that someone unfamiliar with this bug could use to reproduce it. ### Bug description Original report I manually updated Nextcloud from Version 34.0.4 to Version 35.0.0 Manually means I rename the old Nextcloud directory, unzip the new Nextcloud Zip file and copy over the config.php file, ran off upgrade and restart Apache Howeve",
+    "engagement": 70,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0016",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/37492",
+    "title": "Tried to log in \"user\" but could not verify token",
+    "excerpt": "### ⚠️ This issue respects the following points: ⚠️ - [X] This is a **bug**, not a question or a configuration/webserver/proxy issue. - [X] This issue is **not** already reported on Github _(I've searched it)_. - [X] Nextcloud Server **is** up to date. See [Maintenance and Release Schedule](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule) for supported versions. - [X] Nextcloud Server **is** running on 64bit capable CPU, PHP and OS. - [X] I agree to follow Nextcloud's [Code of Conduct](https://nextcloud.com/contribute/code-of-conduct/). ### Bug description As soon as I open Nextcloud in a new tab, I get redirected to login page and have to login again. Then always the first login fails/nothing happens, so I have to login twice. I am seeing lots of \"Tried to log in \"user\" but could not verify token\" errors in log. It is only happening on Safari (macOS, iOS, iPadOS), tried several versions, also did a clean install of Nextcloud 26 and still the same. Also tried with another user account on a different Mac. At first I thought it could be related to #33919, but it doesn't seem to be the case. I really spent many hours in trying to get this fixed, but I have no",
+    "engagement": 69,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0017",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/126370",
+    "title": "Nice G.O. Requring Regular Reloads",
+    "excerpt": "### The problem Recently switched to the new integration. Unfortunately, after a few days, commands to my garage door stop working. Usually resulting in a cryptic error: \"failed to perform action 'data'\". See below. ![image](https://github.com/user-attachments/assets/40c18423-c405-40cb-89f0-b74a4eeda560) Either completely rebooting Home Assistant or reloading the Nice G.O. integration will restore functionality. My current workaround is to run the following daily: ``` - action: homeassistant.reload_config_entry target: device_id: (Nice G.O. Device ID) data: {} ``` As best I can tell, loss of connectivity happens somewhere >1 day, but <7 days. ### What version of Home Assistant Core has the issue? core-2024.9.2 ### What was the last working version of Home Assistant Core? _No response_ ### What type of installation are you running? Home Assistant OS ### Integration causing the issue Nice G.O. ### Link to integration documentation on our website https://www.home-assistant.io/integrations/nice_go ### Diagnostics information _No response_ ### Example YAML snippet _No response_ ### Anything in the logs that might be useful for us? _No response_ ### Additional information _No response_",
+    "engagement": 65,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0018",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/59036",
+    "title": "[Bug]: Nextcloud 33 cron.php uses a lot of CPU / postgres activity",
+    "excerpt": "> [!NOTE] > ### How to help with this issue > * Use the 👍 reaction to show you are affected by this as well > * Avoid commenting unless you have relevant information to add; unnecessary comments create noise for subscribers. > * Subscribe to receive notifications about status changes and new comments. --- *Original report by @z3ntu* > Since upgrading Nextcloud to 33.0.0 (from 32.0.5), once per day the cron.php process maxes out the CPU (granted, it's a slow 1 CPU core DigitalOcean server) for about an hour before returning to normal. I can't find anything in the logs that would suggest *what* cron is actually doing or why it's taking up so much resources. > > ### ⚠️ This issue respects the following points: ⚠️ - [x] This is a **bug**, not a question or a configuration/webserver/proxy issue. - [x] This issue is **not** already reported on [Github](https://github.com/nextcloud/server/issues?q=is%3Aopen+is%3Aissue+label%3Abug) OR [Nextcloud Community Forum](https://help.nextcloud.com/) _(I've searched it)_. - [x] Nextcloud Server **is** up to date. See [Maintenance and Release Schedule](https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule) for supported versions.",
+    "engagement": 54,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0019",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/115334",
+    "title": "Renaming script entity id fails",
+    "excerpt": "### The problem When renaming the _Entity ID_ of a script things go wonky. The _Entity ID_ is renamed in the entities and scripts overview, but when calling the script from an automation, the frontend or Developer Tools > Services the new _Entity ID_ does not work, but the old one still needs to be used. Example: I renamed the _Entity ID_ of my script from `script.boiler_45_min` to `script.prepare_shower` Using the new _Entity ID_ from the frontend gives an error: ``` - type: tile entity: binary_sensor.boiler_heating icon_tap_action: action: call-service service: script.prepare_shower data: {} target: {} name: Prepare Shower ``` https://github.com/home-assistant/core/assets/18603534/a9b2f8d0-c4ca-4f87-83d9-da809a8287b8 Calling my script in Developer Tools > Services still shows the old _Entity ID_: The new id does not work in Developer Tools > Services even though in YAML mode command completion suggests the new _Entity ID_: Running the script from the Scripts overview does work. Workaround: Duplicate the automation, give the duplicate the name you want and delete the original ### What version of Home Assistant Core has the issue? core-2024.4.2 ### What was the last working version",
+    "engagement": 46,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0020",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/51073",
+    "title": "Snapshot timeout on ffmpeg camera",
+    "excerpt": "### The problem Ffmpeg camera cannot take a snapshot because of a timeout without any reason. I'm using `shell_command` for calling `ffmpeg -rtsp_transport tcp -i \"$1\" -an -frames:v 1 -update 1 -f image2 -y \"$2\"` as a workaround for now and it works just fine (less than 1 sec). Note I have configured the encoding of RTSP stream with very small IDR frames interval. ### What is version of Home Assistant Core has the issue? core-2021.5.5 ### What was the last working version of Home Assistant Core? It worked at least few months ago. ### What type of installation are you running? Home Assistant Supervised ### Integration causing the issue FFmpeg Camera ### Link to integration documentation on our website https://www.home-assistant.io/integrations/camera.ffmpeg/ ### Example YAML snippet ```yaml logger: default: info logs: haffmpeg.tools: debug camera: platform: ffmpeg name: cam1 input: \"rtsp://192.168.1.20:554/\" shell_command: snapshot_cam1_call2: \"bash -x /config/snapshot.sh 'rtsp://192.168.1.20:554/' /config/www/cams/cam1_call2.jpg > /config/snapshot.log 2>&1\" automation: - alias: Call1 trigger: - platform: state entity_id: sensor.button1_action to: 'single' action: # Does not work! -",
+    "engagement": 40,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0021",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/19006",
+    "title": "Unable to correct time zone in Nextcloud with privacy features enabled in browser, and no way to specify a specific time zone to operate in if desired",
+    "excerpt": "### Steps to reproduce 1.) In Firefox, enable `privacy.resistFingerprinting` in `about:config` 2.) Go to to any app or Settings in Nextcloud, time zone is incorrect ### Expected behaviour Although Firefox will purposely report UTC with resist fingerprinting enabled, there should always be an option to manually set a time zone. There could be many cases where a user's environment could report an incorrect time zone, or the user may simply wish to operate in a specific time zone different from the system. Or in my case, I wish I didn't have to disable security features just to see things in the correct time zone. ### Actual behaviour My system reports a different time zone from the one I am in, and Nextcloud will gladly accept this incorrect information with no way to override it. ## Server configuration detail **Operating system:** Linux 4.19.75-v7l+ #1270 SMP Tue Sep 24 18:51:41 BST 2019 armv7l **Webserver:** Apache/2.4.38 (Raspbian) (fpm-fcgi) **Database:** mysql 10.3.17 **PHP version:** 7.3.11-1~deb10u1 Modules loaded: Core, date, libxml, openssl, pcre, zlib, filter, hash, Reflection, SPL, session, sodium, standard, cgi-fcgi, mysqlnd, PDO, xml, apcu, bz2, calendar, ctype, curl, d",
+    "engagement": 38,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0022",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/148914",
+    "title": "Xiaomi BLE Username/Password Failed Authentication",
+    "excerpt": "### The problem When trying to add a Xiaomi BLE temperature/humidity sensor to home assistant, using my Xiaomi account credentials fail. I know my credentials are correct. The workaround I have been using is to use a token_extractor.exe https://github.com/PiotrMachowski/Xiaomi-cloud-tokens-extractor with my Xiaomi credentials to get the BLE key and \"enter encryption key\" manually. I know for a fact that entering in my credentials worked in the past, but now it does not. The encryption key method is the only way that works now. ### What version of Home Assistant Core has the issue? core-2025.7.2 ### What was the last working version of Home Assistant Core? _No response_ ### What type of installation are you running? Home Assistant OS ### Integration causing the issue Xiaomi BLE ### Link to integration documentation on our website https://www.home-assistant.io/integrations/xiaomi_ble/ ### Diagnostics information _No response_ ### Example YAML snippet ```yaml ``` ### Anything in the logs that might be useful for us? ```txt ``` ### Additional information _No response_",
+    "engagement": 35,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0023",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/nextcloud/server/issues/28320",
+    "title": "Projects rework to automatic \"Related resources\"",
+    "excerpt": "It is proven by now that people don’t do the manual picking and connecting of projects. Nextcloud should be intelligent enough to show related folders, Deck cards, events, conversations, etc. automatically. The idea is to show folders, Deck cards, calendar events, conversations, etc. which are shared with the same group or circle. This should give useful links to other resources in 90% of the cases without manual interaction. ### Proposal * The manual \"Projects\" entry is expanded into a \"Related resources\" (wording not set, but nicely alliterated) section below the share list. * Alternatively, and if we actually introduce a \"Details\" tab at some point, we could also think about moving this \"Related resources\" section over there. This might be needed cause the sharing list can grow quite long. * There is an explanatory subline \"Anything shared with the same group of people will show up here.\" * Below is a list of the related resources. They have sublines with relevant info like last message for Talk conversation, column and board for Deck cards, or dates for Calendar events. * If any of the entries is clicked: * First step: Just like for Dashboard, you get redirected to that relevan",
+    "engagement": 35,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0024",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/137578",
+    "title": "Certificate Expiry integration does not recognise short Let's Encrypt certificate",
+    "excerpt": "### The problem I have 2 hosts in my home which has LE created certificate only but because of they limitations I only used one part of the certificate instead of full chain. This is causing Certificate Expiry integration fail to check them. I have a script to check certificates and used following code to workaround that: ``` import ssl import certifi def get_certificate_expiry(hostname, ssl_port, timeout, verify=True): try: context = ssl.create_default_context() # Set modern ciphers context.set_ciphers(\"AES256-GCM-SHA384\") context.load_verify_locations(certifi.where()) if not verify: context.check_hostname = False context.verify_mode = ssl.CERT_NONE with socket.create_connection((hostname, ssl_port), timeout=timeout) as sock: with context.wrap_socket(sock, server_hostname=hostname) as ssock: cert = ssock.getpeercert(binary_form=True) x509 = crypto.load_certificate(crypto.FILETYPE_ASN1, cert) expiry_date = datetime.strptime(x509.get_notAfter().decode(\"ascii\"), \"%Y%m%d%H%M%SZ\").replace(tzinfo=timezone.utc) return expiry_date except ssl.SSLCertVerificationError as e: if verify: print(f\"SSL Certificate verification error for {hostname}: {e}\") print(\"Retrying without certificate verifi",
+    "engagement": 31,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0025",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/147960",
+    "title": "Reolink playback error while getting mp4: Server disconnected",
+    "excerpt": "### The problem Hi, the playback of recordings from my Reolink Duo 3V PoE recently stopped working (again) on all of my devices. The error message I get when I want to playback recordings is `Reolink playback error while getting mp4: Server disconnected`. All other features of the camera still work. **Workaround** When I restart the integration and after that the camera itself, the fault clears until it shows up again some days later. **further information** I'm thinking this behavior is not related to the firmware of the camera because I've experienced the problem with: - the original version from last year (`Reolink-Duo-3V-PoE.4060_2409142214.IPC_NT15NA416MP`) I rolled back to recently (after issues with the latest updates, see https://github.com/home-assistant/core/issues/144001). - the update from march `v3.0.0.4669_2503101441` with semi-official patch - the update from may (released in june) `v3.0.0.4867_2505072123` which I'm currently using again This problem might be related to or triggerded by the \"Auto Reboot\" schedule set in the camera. I will look into this... ### What version of Home Assistant Core has the issue? core-2025.6.3 ### What was the last working version of Ho",
+    "engagement": 26,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0026",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/rustdesk/rustdesk/issues/11479",
+    "title": "RustDesk iOS shows \"Successful - Connected, waiting for image...\" when connecting to Android target with the screen off and dozing",
+    "excerpt": "### Bug Description When I connect to an Android target using RustDesk iOS app, a message shows \"Successful - Connected, waiting for image...\" when connecting to Android target with the screen off (it has a screen lock, but it still has a screen lock timeout so it's not locked just a black screen and dozing). ### How to Reproduce 1. Make sure your Android target phone screen lock is enabled with pattern swipe. 2. Make sure your Android target phone screen lock time out is at least couple of minutes or more. 3. Turn off the target screen (it will still not lock because of the timeout you configured in step 2). Wait for it to go into dozing state. 4. Check to make sure the screen is dozing by running the following command from adb: adb shell dumpsys power | grep -E \"mWakefulness\", it should return mWakefulness=Dozing. 5. Connect to the target from RustDesk iOS client app using any versions between 1.2.2 to 1.3.9 (last version). ### Actual Behavior A message shows \"Successful - Connected, waiting for image...\" - You can't do anything, if you try to tap it nothing happens. ### Expected Behavior Being able to see the phone screen and control it or see the black screen so you just tap it",
+    "engagement": 26,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0027",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/168432",
+    "title": "ZHA stuck initializing",
+    "excerpt": "### The problem In the past few months I've seen the ZHA integration get stuck in an Initializing state, this requires a full home assistant restart to recover as there is also no reload option under the three dots in the ZHA integration page (it is normally there but missing when this issue occurs) I am using a SLZB-06M connected on the network (ie not USB) with a wired connection, HA 2026.4.1 runs on a Pi5 in Docker with a wired connection also. This was rock solid through 2025 until the past couple of HA updates (maybe started in 2026.3.x) When this happens the ZHA entry on the integrations page show initializing as does the ZHA integration page itself On the settings -> Zigbee page the there starts show \"warning there is an error\" (or word to that effect) but just below it shows Online and a green tick Debug logs seem to show a timeout (which I can understand) but then a failure to recover As a workaround is there an automation that can be used to restart ZHA? ```python 2026-04-17 12:19:57.292 WARNING (MainThread) [zigpy.application] Watchdog failure Traceback (most recent call last): File \"/usr/local/lib/python3.14/site-packages/zigpy/application.py\", line 814, in _watchdog_lo",
+    "engagement": 23,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0028",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/187516",
+    "title": "Hive fails to set up: Failed to get login info: Expecting value: line 1 column 20 (sso.hivehome.com changed to single-quoted config values)",
+    "excerpt": "### The problem Since 20 October 2026, the Hive integration fails to set up after any restart, with setup_error. Instances that haven’t restarted keep working until they need to log in again. The Hive mobile app is unaffected. Hive has changed the format of the login config on https://sso.hivehome.com/. The values are now single-quoted with spaces around =: `HiveSSOPoolId = 'eu-west-1_…'` `HiveSSOCognitoClientId = '…'` `HiveSSOPublicCognitoClientId = '…'` `HiveSSOState = '%%STATE%%'` HiveApi.getLoginInfo() in pyhive-integration 1.0.9 turns the first block into JSON with string replacements (, → , \", = → \":, and stripping window.). That only works with the old double-quoted format. With single quotes the result is {\"HiveSSOPoolId \": 'eu-west-1_…, which isn’t valid JSON: character 19 is the '. getLoginInfo then returns None, and HiveAuthAsync.async_init crashes on self.data.get(\"UPID\"). I reproduced this outside HA by running the library’s parsing code against the live page content. Additional information ### What version of Home Assistant Core has the issue? 2026.10.2 ### What was the last working version of Home Assistant Core? 2026.10.1 ### What type of installation are you runnin",
+    "engagement": 18,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0029",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/178589",
+    "title": "Ambilight entity reports \"on\" after turn_off while LEDs are off (ha-philipsjs 3.2.5)",
+    "excerpt": "### The problem Since HA 2026.8, `light.turn_off` on the ambilight entity (`light.televisie_ambilight` and `light.65oled937_12_wifi_ambilight`) makes the LEDs go physically dark, but ~1 poll later the entity reports \"on\" again. The re-on has an empty context (no service call, no automation) — it is the philips_js poll reporting the TV state, not a real re-enable. This breaks downstream automations (spurious on/off webhooks to Homey). ## Root cause analysis ha-philipsjs was bumped 3.2.4 → 3.2.5 in 2026.8. In 3.2.5, \"Turn ambilight off via cached pixels on quirked firmware\" (fc75abf567, #54) darkens turn_off by writing all-zero cached pixels in expert mode, because this firmware ignores the styleName=OFF currentConfiguration (returns 200, LEDs stay lit). After the workaround the TV keeps reporting `ambilight_current_configuration` as styleName=FOLLOW_VIDEO + isExpert=true and powerstate=\"On\". philips_js light.py `is_on()` then returns True for mode EXPERT + style FOLLOW_VIDEO (powerstate in (\"On\", None)) → entity shows \"on\". Expected: entity reports \"off\" after the OFF workaround. Suggest: expose a flag (or reuse the zeroed cached layout) so `is_on` can treat \"expert + all-zero pixel",
+    "engagement": 15,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0030",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/home-assistant/core/issues/137987",
+    "title": "Homeseer HSM200 z-wave multi-sensor does not react correctly to color selection from GUI color picker - just always come on white",
+    "excerpt": "### The problem I’ve got an HSM200 z-wave multi-sensor. When I try to turn the LED on to a particular color (a nice deep yellow, e.g.) from the main Overview page or the device info page using the color picker, it only turns on white. Same thing if I create a scene, again using the color picker dialog. When I activate the scene for yellow indicator LED, it come on white. The product docs state: `Color LED feature requires HomeSeer HS3 system or other controller that supports the Z-Wave color command class` and I did some research in z-wave documentation but didn't find anything relevant. So I searched the HA forums a little, and everyone who had automations that used the HSM200 (or EZM) would set the color as an RGB value. So I created a scene and edited it with the GUI scene editor and the color picker and then found this in the YAML: ``` id: \"1737735787803\" name: HS200 Yellow entities: light.ezm: supported_color_modes: - hs color_mode: hs brightness: 255 hs_color: - 45.738 - 47.843 rgb_color: - 255 - 226 - 133 xy_color: - 0.429 - 0.421 friendly_name: \"EZM \" supported_features: 32 state: \"on\" ...snip... ``` Well, that’s obviously using HS to set the color, not RGB. So I directly e",
+    "engagement": 14,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0031",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/119002",
+    "title": "Use a content hash for dirty write protection instead of checking only the size (risk of data loss)",
+    "excerpt": "I'm trying to understand this code and its extensive comment: https://github.com/microsoft/vscode/blob/83b6cdc610703902055aa42984869ff46227126b/src/vs/platform/files/common/fileService.ts#L400-L418 Try the following: 1. Open an existing text file in VS Code. 2. Make an obvious change to it (e.g. insert a line of additional text) but do not save the dirty file. 3. Open the same file in another editor (I used Notepad). 4. In that editor make a change that doesn't alter the file's length (e.g. replace a lowercase letter with an uppercase one). Save this change. 5. Back in VS Code, save the change you made in step 2. 6. :bug: No dirty write warning appears. Instead the change made in step 4 is lost. Version: 1.55.0-insider (user setup) Commit: 84fe402d655e029eb1a5c04e675bf64788fa7fcf Date: 2021-03-15T05:14:29.836Z Electron: 11.3.0 Chrome: 87.0.4280.141 Node.js: 12.18.3 V8: 8.7.220.31-electron.0 OS: Windows_NT x64 10.0.19042",
+    "engagement": 9,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0032",
+    "collected_at": "2026-10-26T05:49:29.644Z"
   },
   {
     "source_type": "community",
@@ -115,9 +357,97 @@
     "source_url": "https://news.ycombinator.com/item?id=50229493",
     "title": "Ask HN: Are people aware OpenAI Dots intercept SSL?",
     "excerpt": "I&#x27;ve already cancelled my OpenAI subscription due to all their recent shenanigans. But before my month ends I thought I&#x27;d see what this Dot thing is all about. First thing I did was install Firefox to test out a project of mine (wouldn&#x27;t work in Chrome). It failed to connect: &gt; The cloud proxy uses an OpenAI certificate authority that the operating system already trusts, but the fresh Firefox profile doesn’t. The game’s connection verifies successfully against that existing authority. &gt; May I add that same cloud certificate authority to this isolated Firefox test profile? Certificate validation stays enabled, but Firefox would then trust certificates issued by the cloud proxy. Wait. What? No. Of course not. Aren&#x27;t Dots ostensibly designed for personal use? Accessing your email and the like. With this thing intercepting web traffic, I imagine almost everyone using these things are in violation of all sorts of policies and agreements.",
-    "engagement": 7,
+    "engagement": 8,
     "evidence_note": "Public discussion lead; not independently verified",
-    "signal_id": "S-20261026-0011",
-    "collected_at": "2026-10-25T16:10:41.917Z"
+    "signal_id": "S-20261026-0033",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/334228",
+    "title": "Make chat sessions available across workspaces (global chat history)",
+    "excerpt": "# Make chat sessions available across workspaces (global chat history) ## Problem Copilot chat sessions are strictly workspace-scoped. Each workspace storage folder (`workspaceStorage/ `) holds its own `chatSessions/*.jsonl` files plus a `chat.ChatSessionStore.index` entry in `state.vscdb`, and the Chat view / \"Show Chats…\" picker only ever lists that one workspace's sessions. As a developer working across many repos daily, this means: - I can never pull up a chat from another workspace without closing my window and reopening the other folder — losing my current context. - Chats \"disappear\" when the workspace identity changes: opening the same folders as a different multi-root combination, saving an untitled workspace as a `.code-workspace` file, or renaming/moving a folder all create a new storage hash with an empty history. - **Silent data loss:** chats created in an untitled multi-root workspace are purged. When the auto-saved workspace file goes away, the storage folder is marked `obsolete` and deleted — months of chat history gone, including pinned chats. Pinning a chat gives no protection against this. ## Proposal Store chat sessions globally (per profile), with workspace ass",
+    "engagement": 6,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0034",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/246710",
+    "title": "Hangs forever showing the dialog: \"Saving editors with unsaved changes is taking a bit longer....\"",
+    "excerpt": "This happened while in a Python jupyter notebook. When trying to exit the dialog shows \"Saving editors with unsaved changes is taking a bit longer...\" but it is not taking a bit longer but hanging forever in this. The dialog only has a \"x\" icon and a \"Cancel\" button. Clicking \"x\" dismisses the dialog, but when trying to exit again the same dialog appears. Clicking \"Cancel\" brings up another OS - type dialog showing \"Do you want to save the changes to the following 2 files?\", showing unsaved files. This offers \"Dont save\", \"Cancel\" and \"Save all\" Clicking \"Save all\" shows the same dialog as we started with. So there is no way at all to save my unsaved work. This is something that should NEVER happen, no matter how broken some extension may be. It causes data loss. There should be some way to save the unsaved files and the core code should make sure this is always an option (unless there is no space to save to, but this is definitely not the case here) Also trying to use \"save as\" with a new name brings up the filepicker dialog, lets me enter a new file name and press ok, but this DOES NOT SAVE the file under a different name either! There is also a cell which is shown as \"pending\" b",
+    "engagement": 6,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0035",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/313703",
+    "title": "Opening a chat session can silently dirty editor buffers and cause data loss",
+    "excerpt": "## Summary Sometimes when I open a chat session, VS Code silently restores stale agent-edit content into open files, marking them dirty. **If the file has been modified since the chat last persisted its state, saving the now-dirtied buffer will overwrite those newer changes — i.e. silent data loss.** This happens even for files edited entirely inside VS Code. ## Steps to reproduce 1. In a chat, have the agent edit a file. Call this content **S1**. Don't Keep/Undo. 2. Close the chat. 3. Reload VS Code. 4. Edit the file (in VS Code) and save it. Call this content **S2**. 5. Reload VS Code again. 6. Open the chat. 7. **The file's editor buffer is replaced with S1 and marked dirty.** Saving (or autosave) overwrites S2 on disk with S1 — the user's edits from step 4 are lost. ## Root cause `ChatEditingSession.storeState()` persists every entry whose state is `Modified` on shutdown (`chatEditingServiceImpl.ts`, the `onWillSaveState` block). On reopen, `_init` → `_initEntries` in `chatEditingSession.ts` restores them: ```ts const restoreToDisk = snapshotEntry.state === ModifiedFileEntryState.Modified; await entry.restoreFromSnapshot(snapshotEntry, restoreToDisk); ``` `restoreFromSnapshot` ",
+    "engagement": 5,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0036",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/340829",
+    "title": "Copilot agent can overwrite newer workspace files from a stale chat session",
+    "excerpt": "- Copilot Chat Extension Version: No separate GitHub Copilot Chat extension version was available in the local extension list (this report concerns the VS Code agent/chat experience). - VS Code Version: 1.141.0 - OS Version: Windows x64 - Feature (e.g. agent/edit/ask mode): Agent/code editing across separate chat sessions - Selected model: Not recorded - Logs: Not attached; no project source or private logs included. ## Problem A long-inactive chat session appears to use stale code remembered from its earlier context when editing the same project. After asking for an optimization in that old session, its edits overwrote newer contents already present in the workspace, across multiple files. This caused substantial unintended changes and risk of data loss. The files were recovered from local editor history/Git. This resembles https://github.com/microsoft/vscode/issues/265794, which was marked fixed in 1.107, but this occurred in VS Code 1.141.0 and specifically involved resuming an old session while another session/current workspace had newer code. ## Steps to reproduce (observed scenario; not yet confirmed deterministic) 1. Open a project in VS Code and make newer changes to one or",
+    "engagement": 5,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0037",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/rustdesk/rustdesk/issues/16156",
+    "title": "Linux: h264_vaapi no longer detected since 1.4.4 on CQP-only Intel iGPUs — hwcodec never sets rc_mode for vaapi (last good: 1.4.3)",
+    "excerpt": "### Bug Description On Intel iGPUs whose VA-API driver exposes H.264 encode **only** via the low-power entrypoint (`VAEntrypointEncSliceLP`, which supports `VA_RC_CQP` and nothing else), `h264_vaapi` stopped being detected as an available hardware encoder between **1.4.3 and 1.4.4** and is still missing in 1.4.9. The host silently falls back to software encoding. **Bisected across every release from 1.3.9 to 1.4.9** on the same machine, same OS, same driver — only the RustDesk version differs. Result was read from `ram_encode` in `check-hwcodec-config`: | Version | `h264_vaapi` in `ram_encode` | `RC mode` / `avcodec_open2` errors | |---|---|---| | 1.3.9, 1.4.0, 1.4.1, 1.4.2 | yes | 0 | | **1.4.3** (2025-10-17) | **yes — last good release** | 0 | | 1.4.4 (2025-11-19) | **no — first bad release** | 2 | | 1.4.5, 1.4.6, 1.4.7, 1.4.8, 1.4.9 | no | 2 each | The break is clean and monotonic; it is not fixed again in any later release. ``` 1.4.3: ram_encode: [CodecInfo { name: \"h264_vaapi\", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_NONE }] 1.4.4: ram_encode: [] ``` Encoder init fails from 1.4.4 onward with: ``` ERROR [hwcodec/src/ffmpeg.rs:34] Driver does not sup",
+    "engagement": 5,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0038",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/300557",
+    "title": "Subject: Severe Data Loss in Copilot Chat Sidebar History After Update/State Reset",
+    "excerpt": "Type: Bug I’m reporting a serious reliability failure in Copilot Chat that caused loss of active working context and wasted paid usage. A large set of in-progress Copilot Chat conversations that had been visible daily for weeks disappeared from the sidebar with no warning, no migration notice, and no practical recovery flow in the product. This was not cosmetic inconvenience. It was loss of working state tied to active tasks, decisions, and technical context accumulated over time. Impact: Significant loss of work context across multiple ongoing efforts. Additional paid premium requests consumed to reconstruct missing context. Direct productivity loss and trust erosion in Copilot Chat as a paid tool. What makes this unacceptable is not only the disappearance itself, but the mismatch between product behavior and user expectation. The UI presents chat history as persistent working memory, but update/reset behavior appears to treat it like fragile local cache. If history is non-durable, users must be clearly warned. If history is intended to persist, this is a data durability defect. Expected behavior: Durable, version-safe chat history retention. Explicit migration and recovery path d",
+    "engagement": 4,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0039",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/microsoft/vscode/issues/333324",
+    "title": "VS Code Reload Window Can Discard Active Agent State",
+    "excerpt": "Does this issue occur when all extensions are disabled?: Yes/No Report Issue' dialog can assist with this. --> - VS Code Version: 1.135.0 - OS Version: Windows 11 Pro 10.0.22631 Build 22631 Steps to Reproduce: 1. Small \"Reload Window\" pops up in Extensions area. 2. Click \"Reload Window\" 3. It doesn't just \"reload window\". The whole process is dropped, your Dev Container is disconnected and shuts down, your Codex, Claude Code, and Copilot context are lost. 4. Data is permanently lost. [VSCODE_RELOAD_WINDOW_AGENT_STATE_LOSS_BUG_2026-08-29.md](https://github.com/user-attachments/files/31589343/VSCODE_RELOAD_WINDOW_AGENT_STATE_LOSS_BUG_2026-08-29.md)",
+    "engagement": 4,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0040",
+    "collected_at": "2026-10-26T05:49:29.644Z"
+  },
+  {
+    "source_type": "issue_tracker",
+    "source_name": "GitHub Issues",
+    "source_url": "https://github.com/rustdesk/rustdesk/issues/3744",
+    "title": "Add support for mousepads on clients (Touchpad gestures, zoom and scrolling)",
+    "excerpt": "### Description First of all: thank you for the great work! It works very well but I have 1 issue that is really bothering me: I am controlling several Windows desktop cpmputers from my Macbook Pro. I can't scroll or zoom in the remote Windows computers using 2-finger gestures on my Macbook-touchpad. As a workaround, I have to drag the scrollbars to scroll. Please add support for 2-finger scrolling at least. ### Impact All users that are using laptops as clients ### Additional Context _No response_ ------- - [x] windows as controlled side #5049 - [ ] mac/linux as controlled side",
+    "engagement": 4,
+    "evidence_note": "Public engineering record; scope is repository-specific",
+    "signal_id": "S-20261026-0041",
+    "collected_at": "2026-10-26T05:49:29.644Z"
   }
 ]
