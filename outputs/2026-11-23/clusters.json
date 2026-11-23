@@ -1,0 +1,96 @@
+[
+  {
+    "cluster_id": "C-20261123-0001",
+    "label": "manual",
+    "signal_ids": [
+      "S-20261123-0001",
+      "S-20261123-0003",
+      "S-20261123-0004",
+      "S-20261123-0005",
+      "S-20261123-0006",
+      "S-20261123-0007",
+      "S-20261123-0008",
+      "S-20261123-0009",
+      "S-20261123-0010",
+      "S-20261123-0011",
+      "S-20261123-0015",
+      "S-20261123-0017",
+      "S-20261123-0022",
+      "S-20261123-0024",
+      "S-20261123-0032"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "Observed workaround language",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  },
+  {
+    "cluster_id": "C-20261123-0002",
+    "label": "uncategorized friction",
+    "signal_ids": [
+      "S-20261123-0002",
+      "S-20261123-0012",
+      "S-20261123-0013",
+      "S-20261123-0014",
+      "S-20261123-0016",
+      "S-20261123-0019",
+      "S-20261123-0025",
+      "S-20261123-0028",
+      "S-20261123-0030",
+      "S-20261123-0031",
+      "S-20261123-0038"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "待核实",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  },
+  {
+    "cluster_id": "C-20261123-0003",
+    "label": "workaround",
+    "signal_ids": [
+      "S-20261123-0018",
+      "S-20261123-0020",
+      "S-20261123-0021",
+      "S-20261123-0023",
+      "S-20261123-0026",
+      "S-20261123-0027",
+      "S-20261123-0029",
+      "S-20261123-0037",
+      "S-20261123-0039"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "待核实",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  },
+  {
+    "cluster_id": "C-20261123-0004",
+    "label": "data loss",
+    "signal_ids": [
+      "S-20261123-0033",
+      "S-20261123-0034",
+      "S-20261123-0035"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "待核实",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  },
+  {
+    "cluster_id": "C-20261123-0005",
+    "label": "broken",
+    "signal_ids": [
+      "S-20261123-0036"
+    ],
+    "recurring_workflow": "待核实",
+    "affected_role": "待识别",
+    "payment_or_workaround_signal": "待核实",
+    "contrary_evidence": "尚未检索",
+    "verification_status": "未经证实的商业摩擦线索"
+  }
+]
